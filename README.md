@@ -1,2 +1,2 @@
-# Starter-kit
+# Cuda Project 
 Cuda Project
