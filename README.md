@@ -1,2 +1,2 @@
 # Starter-kit
-Starter Kit (SASS)
+Cuda Project
