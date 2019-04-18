@@ -1,0 +1,33 @@
+.skills{
+    padding: 10rem 0;
+    text-align: center;
+
+    // height: 70rem;
+
+    &__details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__box{
+        padding: 3rem;
+
+
+    }
+
+    &__image{
+        margin-bottom: 2rem;
+    }
+
+    &__title{
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $color-primary-heading;
+    }
+    
+
+
+}
+

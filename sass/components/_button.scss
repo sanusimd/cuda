@@ -1,0 +1,34 @@
+.btn {
+    text-transform: uppercase;
+    border: none;
+    padding: 2rem 4rem;
+    font-size: 1.8rem;
+    border-radius: 3px;
+    margin-bottom: 14rem;
+    font-weight: 300;
+    
+
+    &__orange {
+    border-bottom: 4px solid $color-orange-dark;
+    background-color:$color-orange-light;
+    color: $color-white;
+    }
+
+    &__green{
+        border-bottom: 4px solid $color-green-dark;
+        background-color:$color-green-light;
+        color: $color-white;
+    }
+
+    &__blue{
+        border-bottom: 4px solid $color-blue-dark;
+        background-color:$color-blue-light;
+        color: $color-white;
+
+    }
+    
+    
+
+    
+}
+

@@ -1,0 +1,58 @@
+.teams{
+    background-color: $color-teams;
+    padding: 10rem 0;
+    text-align: center;
+
+    // height: 70rem;
+
+    &__details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__box{
+        padding: 3rem;
+        
+
+
+    }
+
+
+    &__photo-1{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    &__user--info{
+        margin-bottom: 2rem;
+
+    }
+
+
+    &__user--name{
+        text-transform: uppercase;
+        color: $color-primary-heading;
+        font-size: 2rem;
+
+    }
+
+    &__user--position{
+        color: $color-paragraph;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+}
+
+.social__icon {
+    &:not(:last-child){
+        margin-right: 0.7rem;
+    }
+
+    
+
+}

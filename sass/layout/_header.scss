@@ -1,0 +1,59 @@
+.header{
+    background-color: $color-header;
+    // height: 40rem;
+    
+
+    &__nav{
+        font-size: 1.5rem;
+        padding-top: 5rem;
+        color:$color-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo--box{
+        
+    }
+
+    &__logo{
+
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+     
+    }
+
+    &__item{
+        display: inline-block;
+        padding: 0 1.5rem;
+        border-radius: 3px;
+        text-transform: uppercase;
+
+        &:not(:last-child) {
+            margin-right: 1.8rem;
+        }
+
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    &__item:hover{
+        background-color: $color-primary-dark;
+    }
+
+    &__info{
+        text-align: center;
+        margin-top: 14rem;
+    }
+
+}
+
+
+
+

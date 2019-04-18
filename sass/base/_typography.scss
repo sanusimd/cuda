@@ -1,0 +1,60 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.7;
+
+
+}
+
+.primary-heading{
+    font-size: 4rem;
+    color: $color-white;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    
+}
+
+.black{
+    color: $color-primary-heading;
+}
+
+.secondary-heading{
+    font-size: 4rem;
+    color: $color-white;
+    line-height: 1.2;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+.tertairy-heading{
+    font-size: 2rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+.paragraph{
+    font-size: 1.5rem;
+    color: $color-white;
+    line-height: 1.5;
+    
+}
+
+.teams__paragraph{
+    color: $color-primary-heading;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+
+}
+
+.paragraph-text{
+    // text-align: center;
+    font-size: 1.5rem;
+    color: $color-primary-heading;
+}
+
+
+

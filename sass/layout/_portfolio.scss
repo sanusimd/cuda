@@ -1,0 +1,22 @@
+.portfolio{
+    background-color: $color-portfolio;
+    padding: 10rem 0;
+    text-align: center;
+    
+
+    &__details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    &__box{
+        padding: 3rem;
+        width: 50%;
+
+    }
+
+}

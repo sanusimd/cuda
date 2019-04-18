@@ -1,0 +1,41 @@
+.footer{
+    background-color: $color-footer;
+
+    &__nav{
+        font-size: 1.5rem;
+        padding: 2rem;
+        color:$color-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+    }
+
+    &__item{
+        display: inline-block;
+        padding: 0 1.5rem;
+        border-radius: 3px;
+        text-transform: capitalize;
+
+        &:not(:last-child) {
+            margin-right: 1.8rem;
+        }
+    }
+    
+    &__link{
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    &__item a:focus{
+        color: $color-blue-light;
+    }
+
+    
+
+}
+

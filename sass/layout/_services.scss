@@ -1,0 +1,26 @@
+.services{
+ background-color:$color-services ;
+ text-align: center;
+ padding: 10rem 0;
+
+
+
+ &__details{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    //  margin-top: 8.5rem;
+    
+ }
+
+ &__box{
+    margin: 3rem;
+    padding: 1rem;
+ }
+
+ &__image{
+    margin-bottom: 3rem;
+ }
+ 
+
+}
