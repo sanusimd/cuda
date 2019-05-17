@@ -10,12 +10,19 @@
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
+        
+
+        @include respond(tab-port){
+            flex-direction: column;
+         }
 
     }
 
     &__box{
-        padding: 3rem;
+        padding: 5rem;
         width: 50%;
+        // width: calc(100% /2);
+
 
     }
 

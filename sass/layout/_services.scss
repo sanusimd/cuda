@@ -5,11 +5,20 @@
 
 
 
+
+
  &__details{
      display: flex;
      justify-content: center;
      align-items: center;
     //  margin-top: 8.5rem;
+
+    // responsive 
+    @include respond(tab-port){
+       flex-direction: column;
+
+    }                                                                                                                                            
+
     
  }
 

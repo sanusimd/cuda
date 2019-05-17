@@ -9,6 +9,12 @@
         justify-content: center;
         align-items: center;
 
+        // responsive                                               
+        @include respond(tab-port){
+            flex-direction: column;
+     
+         }
+
     }
 
     &__box{

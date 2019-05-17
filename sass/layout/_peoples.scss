@@ -11,6 +11,11 @@
         flex-direction: row;
         flex-wrap: wrap;
 
+        @include respond(tab-port){
+            flex-direction: column;
+     
+         }
+
     }
 
     &__box{

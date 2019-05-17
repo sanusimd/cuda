@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::before,
 *::after {
@@ -8,6 +25,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.25%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -20,18 +46,17 @@ body {
   font-size: 4rem;
   color: #fff;
   line-height: 1.2;
-  margin-bottom: 5rem;
-  text-transform: uppercase; }
-
-.black {
-  color: #3c4761; }
+  margin-bottom: 5rem; }
 
 .secondary-heading {
   font-size: 4rem;
   color: #fff;
   line-height: 1.2;
   margin-bottom: 5rem;
-  text-transform: uppercase; }
+  padding-bottom: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative; }
 
 .tertairy-heading {
   font-size: 2rem;
@@ -48,11 +73,20 @@ body {
   color: #3c4761;
   font-size: 1.5rem;
   line-height: 1.5;
-  margin-bottom: 3rem; }
+  margin-bottom: 7rem; }
 
 .paragraph-text {
   font-size: 1.5rem;
   color: #3c4761; }
+
+.black {
+  color: #3c4761 !important; }
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(126deg); } }
 
 .left-align-text {
   text-align: left !important; }
@@ -64,7 +98,8 @@ body {
   font-size: 1.8rem;
   border-radius: 3px;
   margin-bottom: 14rem;
-  font-weight: 300; }
+  font-weight: 300;
+  cursor: pointer; }
   .btn__orange {
     border-bottom: 4px solid #c86a40;
     background-color: #eb7d4b;
@@ -120,6 +155,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .services__details {
+        flex-direction: column; } }
   .services__box {
     margin: 3rem;
     padding: 1rem; }
@@ -134,8 +172,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .teams__details {
+        flex-direction: column; } }
   .teams__box {
-    padding: 3rem; }
+    margin-right: 3rem;
+    padding: 2rem;
+    transition: all .6s; }
+    .teams__box:hover {
+      transform: scale(1.2);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
   .teams__photo-1 {
     width: 150px;
     height: 150px;
@@ -154,6 +200,9 @@ body {
 .social__icon:not(:last-child) {
   margin-right: 0.7rem; }
 
+.social__icon:hover {
+  cursor: pointer; }
+
 .skills {
   padding: 10rem 0;
   text-align: center; }
@@ -161,6 +210,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__details {
+        flex-direction: column; } }
   .skills__box {
     padding: 3rem; }
   .skills__image {
@@ -180,8 +232,11 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio__details {
+        flex-direction: column; } }
   .portfolio__box {
-    padding: 3rem;
+    padding: 5rem;
     width: 50%; }
 
 .peoples {
@@ -193,6 +248,9 @@ body {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 56.25em) {
+      .peoples__details {
+        flex-direction: column; } }
   .peoples__box {
     padding: 3rem;
     width: 50%;
